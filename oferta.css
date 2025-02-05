@@ -156,9 +156,48 @@ main p {
     border-radius: 1em;
     margin-bottom: 20px;
     padding: min(3em, 15%);
-
+    background-color: #0c1025;
     h2, p {margin-top: 1em}
+
+    span {
+        color: #f58300;
+    }
+
+    .white-text {
+        color: #fff;
+        font-size: 25px;
+    }
+    li {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
 }
+
+.oferta-color {
+    color: #f58300;
+    
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: var(--line-clr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Początkowo ukrywamy */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #191920;
+    
+}
+
 
 @media(max-width: 800px) {
     body {

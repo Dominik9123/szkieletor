@@ -166,6 +166,23 @@ main p {
         width: 80%;
     }
 }
+
+.info-main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.info-main {
+    text-align: center;
+    
+    span {
+        display: block;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+}
+
 .realizacje-container {
     display: flex;
     flex-wrap: wrap;
