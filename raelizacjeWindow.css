@@ -165,6 +165,8 @@ main p {
     padding-left: 40px;
 }
 
+
+
 span {
     color: #f58300;
 }
@@ -206,6 +208,12 @@ hr {
 
 .naglowek {
     text-align: center;
+    
+    
+}
+
+.naglowek span {
+    margin-left: 6px;
 }
 
 .photos {
