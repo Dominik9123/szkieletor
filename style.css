@@ -22,8 +22,8 @@ html {
     line-height: 1.5rem;
 }
 body {
+    min-height: 100%;
     min-height: 100vh;
-    min-height: 100dvh;
     background-color: var(--base-clr);
     color: var(--text-clr);
     display: grid;
@@ -32,7 +32,7 @@ body {
 #sidebar {
     box-sizing: border-box;
     height: 100%;
-    min-height: 100vh;
+   
     width: 250px;
     padding: 5px 1em;
     background-color: var(--base-clr);
@@ -235,7 +235,7 @@ main p {
     transition: 300ms ease-in-out;
 }
 
-@media(min-width: 430px) and (max-width: 1024px) {
+@media(min-width: 300px) and (max-width: 1024px) {
     * {
         max-width: 100%;
     }

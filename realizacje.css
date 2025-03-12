@@ -245,6 +245,11 @@ main p {
     main {
         padding: 2em 1em 60px 1em;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     .container {
         border: none;
         padding: 0;
@@ -257,6 +262,8 @@ main p {
 
     svg {
         margin-top: auto;
+        margin-bottom: 20px;
+        
     }
 
     #sidebar{
