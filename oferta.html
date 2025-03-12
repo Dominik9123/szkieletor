@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkieletor P.P.H.U</title>
+    <link rel="stylesheet" href="oferta.css">
+    <link rel="icon" href="logos/szkieletor_logo_2.png">
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Szkieletor</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Strona Główna</span>
+                </a>
+            </li>
+            <li>
+                <a href="realizacje.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"/></svg>
+                    <span>Realizacje</span>
+                </a>
+            </li>
+            <li> 
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"/></svg>
+                    <li>
+                    <span class="oferta-color">Oferta</span>
+                    </li>
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="oferta.html#budynki">Budynki Mieszkalne</a></li>
+                        <li><a href="oferta.html#tarasy">Tarasy</a></li>
+                        <li><a href="oferta.html#zadaszenia">Zadaszenie</a></li>
+                        <li><a href="oferta.html#pompy">Pompy Ciepła</a></li>
+                        <li><a href="oferta.html#fotowoltaika">Fotowoltaika</a></li>
+                    </div>
+                </ul>
+            </li>
+            <!-- <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>todo-list</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#"></a>Work</li>
+                        <li><a href="#"></a>Private</li>
+                        <li><a href="#"></a>Coding</li>
+                        <li><a href="#"></a>Gardering</li>
+                        <li><a href="#"></a>School</li>
+                    </div>
+                </ul>
+            </li> -->
+
+            <li>
+                <a href="kontakt.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>Kontakt</span>
+                </a>
+            </li>
+            <li>
+                <a href="onas.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+                    <span>O Firmie</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2><span>Zakres Usług</span></h2>
+                <p>Zakres budowy domu szkieletowego i wykonywanych prac wraz ze specyfikacją materiałów użytych do realizacji według projektu dostarczonego przez inwestora</p>
+                <div class="container" id="budynki" >
+                    <p class="white-text">--- Budynek Mieszkalny ---</p>
+                    <p><span>Fundament</span> -</p>
+
+                    <li>Pomiary przy wykopach fundamentowych</li>
+                    <li>Zdjęcie wierzchniej warstwy gleby oraz zchałdowanie</li>
+                    <li>Roboty ziemne wykonywane koparką / Wykopy fundamentów wykonane koparką</li>
+                    <li>Przygotowanie i montaż zbrojenia ław fundametowych</li>
+                    <li>Fundamenty z bloczków fundamentowych B20 na zaprawie cementowej</li>
+                    <li>Izolacja przeciwwilgociowa pionowa nakładana trzykrotnie na część murowaną fundamentów</li>
+                    <li>Izolacja przeciwwilgociowa pozioma (papa termozgrzewalna 5,2 mm gr)</li>
+                    <li>Izolacja termiczna pionowa fundamentów styropianem twardym wodoodpornym firmy Knauf Hydro EPS100 lambda 0,36 grubości 10cm</li>
+                    <li>Tynk wyrównujący na styropian z zatopioną siatką w zaprawie klejowej</li>
+                    <li>Izolacja pionowa warstwy ocieplonej fundamentów w postaci folii kubełkowej</li>
+                    <li>Wypełnienie fundamentów piaskiem zasypowym i jego zagęszczenie</li>
+                    <li>Izolacja przeciwwilgociowa pod posadzką w postaci folii gr. 0,3mm</li>
+                    <li>Pierwsza wylewka 10 cm B15 tzw.chudziak</li>
+                    <li>Izolacja termiczna pozioma styropianem 20cm</li>
+                    <li>Druga wylewka zbrojona siatką 7cm B20</li>
+
+                    <p><span>Ściany parteru</span></p>
+                    <li>Drewno czterostronnie strugane suszone komorowo 16–19% wilgotności (nie wymaga impregnacji) fazowane krawędzie świerk skandynawski klasa C24</li>
+                    <li>Przekroje konstrukcji ścian zewnętrznych 4,5cm x 14,5cm</li>
+                    <li>Przekroje konstrukcji ścian wewnętrznych 4,5cm x 14,5cm</li>
+                    <li>Płyta OSB 15mm</li>
+                    <li>Folia wiatroizolacyjna na ścianach zewnętrznych z zabezpieczeniem otworów okiennych</li>
+                    <li>Wełna skalna 15 cm w ścianach zewnętrznych Lambda 0,36</li>
+                    <li>Wełna skalna 15 cm w ścianach wewnętrznych Lambda 0,39</li>
+                    <li>Wełna skalna elewacyjna 15 cm lambda 0,36 wykończona tynkiem silikonowym 35 cm izolacji w postaci wełny skalnej w ścianach zewnętrznych</li>
+                    <li>Folia paroizolacyjna zamykająca pierwszą warstwę ocieplenia od wewnątrz</li>
+                    <li>Ruszt pod płyty karton gips 4cm x 5cm w którym poprowadzone są elektryka i hydraulika wypełniony 5 cm wełną skalną z drewna suszonego klasa C24</li>
+                    <li>Płyty karton gips 12mm ognioodporne w całym domu z wykonaną gładzią i zagruntowane</li>
+                    <li>W łazienkach i pomieszczeniach mokrych zamontowana płyta karton gips 12mm wilgocioodporna</li>
+                    <li>Na poddaszu użytkowym płyty karton gips 12mm ognioodporne z wykonaną gładzią i zagruntowane. (jeżeli projekt zawiera poddasze użytkowe).</li>
+
+                    <p><span>Dach</span></p>
+                    <li>Dach wielospadowy wykonany z krokwi 4,5cm x19,5cm z tego samego drewna co konstrukcja ścian klasa C24</li>
+                    <li>Dach/strop pod poddaszem nieużytkowym ocieplony wełną skalną Lambda 0,36 o łącznej grubości 30 cm z zamontowaną paroizolacją</li>
+                    <li>Konstrukcja dachu pokryta płytą OSB 15mm i papą podkładową</li>
+                    <li>Blachodachówka szwedzka SSAB (30 lat gwarancji producenta) lub Amerykański gontn bitumiczny (gwarancja dożywotnia producenta)</li>
+                    <li>Obróbki blacharskie wykonane z blachy stalowej</li>
+                    <li>Orynnowanie budynku w postaci rynien z blachy aluminiowej powlekanej w systemie ciągłym bez złączek i widocznych haków rynnowych</li>
+                    <li>Podbitka PCV Bryza drewnopodobna</li>
+
+                    <p><span>Strop nad parterem (Między-Kondygnacyjny)</span></p>
+                    <li>Konstrukcja stropu wykonana z drewna suszonego struganego świerkowego klasa C24 o przekroju 4,5cm x 24,5cm</li>
+                    <li>Od góry jako podłoga zamontowana płyta OSB 22mm na konstrukcji stropu</li>
+                    <li>Strop międzykondygnacyjny wypełniony wełną 20 cm lambda 0,36</li>
+                    <li>Od dołu ruszt stalowy z zamontowaną płytą karton gips 12mm ognioodporną</li>
+
+                    <p><span>Elewacja</span></p>
+                    <li>Dom ocieplony elewacyjną wełną mineralną gr. 15 cm i wykończony tynkiem cienkowarstwowym silikonowym firmy ZPB Maciejewski PROMA baranek 1,5mm.</li>
+                    <li>Stolarka okienna PCV (oknoplast) pakiet 3 szyby + termoramka kolor do uzgodnienia</li>
+                    <li>Parapety zewnętrzne blaszane lub inne dostarczone przez inwestora</li>
+                    <li>Drzwi zewnętrzne wejściowe do uzgodnienia w cenie do 3000 zł brutto.</li>
+                    <li>Drzwi zewnętrzne gospodarcze do uzgodnienia w cenie do 2000 zł brutto</li>
+                    <li>Limit na stolarkę okienną zewnętrzną i drzwi zewnętrzne wynosi (30 000 zł brutto)</li>
+                    <li>Drzwi garażowe segmentowe firmy Krispol z napędem i sterowaniem na pilota ( jeżeli projekt zawiera garaż w bryle budynku )</li>
+
+                    <p><span>Instalacje</span></p>
+                    <li>Instalacje realizowowane wg projektu</li>
+                    <li>Instalacja Kanalizacyjna | Wodna | Elektryczna | Antenowa | internetowa + domofon i brama wjazdowa | Wentylacji Mechanicznej-rekuperacji </li>
+                    <li>Instalacja CO zawierająca ogrzewanie podłogowe na parterze, dodatkowo instalacja pod grzejnik w łazience</li>
+                    <li> Instalacja CO grzejnikowa na poddaszu ( jeżeli projekt zawiera poddasze użytkowe )</li>
+
+                    <p><span>Schody</span></p>
+                    <li>Schody wykonane z tego samego drewna co konstrukcja domu czyli suszonego struganego klasa C24 o przekroju 4,5cm x 24,5cm</li>
+                    <li>Schody strychowe firmy Fakro</li>
+
+                    <p class="white-text">--- Oferta Nie Zawiera ! ---</p>
+                    <li>Stolarki drzwiowej wewnętrznej</li>
+                    <li>Wyposażenia kotłowni</li>
+                    <li>Armatury</li>
+                    <li>Paneli oraz terakoty</li>
+                    <li>Parapetów wewnętrznych</li>
+                    <li>Przyłączy do budynku</li>
+                    <li>Osprzętu elektrycznego</li>
+                    <li>Tarasów zewnętrznych i schodów wejściowych do domu</li>
+                    <li>Urządzenia (centrali) do wentylacji mechanicznej-rekuperacji</li>
+
+                    <p class="white-text">--- Uwagi ! ---</p>
+                    <p>Zapotrzebowanie domu wybudowanego w naszej technologii wynosi ok 44kwh/m2/rok</p>
+                    <p><span>Na zrealizowaną inwestycję udzielamy 30 letniej gwarancji na konstrukcję domu</span></p>
+                    <p>Prace wykończeniowe 2 lata. Na poszczególne materiały gwarancje producentów</p>
+                </div>
+        </div>
+
+        <div class="container" id="tarasy">
+            <p class="white-text">--- Tarasy ---</p>
+        </div>
+        <div class="container" id="zadaszenia">
+            <p class="white-text">--- Zadaszenie | Wiaty ---</p>
+        </div>
+        <div class="container" id="pompy">
+            <p class="white-text">--- Pompy Ciepła ---</p>
+        </div>
+        <div class="container" id="fotowoltaika">
+            <p class="white-text">--- Fotowoltaika ---</p>
+        </div>
+        
+    </main>
+
+    <script type="text/javascript" src="app.js" defer></script>
+
+    <button id="backToTop" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></button>
+
+</body>
+</html>

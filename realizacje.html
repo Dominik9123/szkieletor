@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkieletor P.P.H.U</title>
+    <link rel="stylesheet" href="realizacje.css">
+    <link rel="icon"href="logos/szkieletor_logo_2.png">
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Szkieletor</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Strona Główna</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="realizacje.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"/></svg>
+                    <span>Realizacje</span>
+                </a>
+            </li>
+            <li>   
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"/></svg>
+                    <span>Oferta</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="oferta.html">Budynki Mieszkalne</a></li>
+                        <li><a href="oferta.html">Tarasy</a></li>
+                        <li><a href="oferta.html">Zadaszenie</a></li>
+                        <li><a href="oferta.html">Pompy Ciepła</a></li>
+                        <li><a href="oferta.html">Fotowoltaika</a></li>
+                    </div>
+                </ul>
+            </li>
+            <!-- <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>todo-list</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#"></a>Work</li>
+                        <li><a href="#"></a>Private</li>
+                        <li><a href="#"></a>Coding</li>
+                        <li><a href="#"></a>Gardering</li>
+                        <li><a href="#"></a>School</li>
+                    </div>
+                </ul>
+            </li> -->
+
+            <li>
+                <a href="kontakt.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>Kontakt</span>
+                </a>
+            </li>
+            <li>
+                <a href="onas.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+                    <span>O Firmie</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <p><span>Domy Szkieletowe</span> - Kliknij <span>+</span> aby czytać wiecęj na temat danej realizacji ! </p>
+            <div class="container">
+                <h2 class="houses-header">Domy Szkieletowe</h2>
+            </div>
+            <div class="realizacje-container">
+                <div class="realizacja-box">
+     
+                 <p>Bełchatów, Niedyszyna <span>156m²</span></p>
+                 <a href="realizacjaNiedeszyna156.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+                <a href="realizacjaNiedeszyna156.html"><img src="realizacje/niedyszyna1.jpg" alt="niedyszyna" class="realizacje-slide"></a>
+                <p>Czas Budowy : 4 Miesiace</p>
+                <p>Powierzchnia  - 140m²</p>
+             </div>
+             <div class="realizacja-box">
+     
+                 <p>Łódź Rąbień <span>158m²</span></p>
+                 <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+     
+                <a href="realizacje.html"><img src="realizacje/lodz-rabien.jpg" alt="lodz-rabien-realizacja" class="realizacje-slide"></a>
+                <p>Czas Budowy : 3 Miesiace</p>
+                <p>Powierzchnia - 158m²</p>   
+             </div>
+             <div class="realizacja-box">
+     
+                <p>Bełchatów <span>135m²</span></p>
+                <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+    
+    
+               <a href="realizacje.html"><img src="realizacje/belchatow.jpg" alt="belchatow" class="realizacje-slide"></a>
+               <p>Czas Budowy : 3 Miesiace</p>
+               <p>Powierzchnia - 120m²</p>
+               
+            </div>
+             </div>
+        </div>
+
+        <div class="container">
+            <div class="realizacje-container">
+                <div class="realizacja-box">
+     
+                 <p>Kałduny <span>80m²</span></p>
+                 <a href="realizacje.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+                <a href="realizacje.html"><img src="realizacje/kalduny.jpg" alt="kalduny-realizacja" class="realizacje-slide"></a>
+                <p>Czas Budowy : 4 Miesiace</p>
+                <p>Powierzchnia  - 80m²</p>
+             </div>
+             <div class="realizacja-box">
+     
+                 <p>Dobrzelów<span> 98m²</span></p>
+                 <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+     
+                <a href="realizacje.html"><img src="realizacje/dobrzelow.jpg" alt="dobrzelow-realizacja" class="realizacje-slide"></a>
+                <p>Czas Budowy : 3 Miesiace</p>
+                <p>Powierzchnia - 98m²</p>   
+             </div>
+             <div class="realizacja-box">
+     
+                <p>Bełchatów Niedyszyna <span>150m²</span></p>
+                <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+    
+    
+               <a href="realizacje.html"><img src="realizacje/belchatow-niedyszyny-2.jpg" alt="niedyszyny2-realizacja" class="realizacje-slide"></a>
+               <p>Czas Budowy : 3 Miesiace</p>
+               <p>Powierzchnia - 150m²</p>
+               
+            </div>
+             </div>
+        </div>
+        <div class="container">
+            <div class="realizacje-container">
+                <div class="realizacja-box">
+     
+                 <p>Bełchatów, Emilin <span>198m²</span></p>
+                 <a href="realizacje.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+                <a href="realizacje.html"><img src="realizacje/emilin.jpg" alt="emilin-realizacja" class="realizacje-slide"></a>
+                <p>Czas Budowy : 4 Miesiace</p>
+                <p>Powierzchnia  - 198m²</p>
+             </div>
+             <div class="realizacja-box">
+     
+                 <p>Dobrzelów<span>98m²</span></p>
+                 <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+     
+                <a href="realizacje.html"><img src="realizacje/dobrzelow.jpg" alt="dobrzelow-realizacja" class="realizacje-slide"></a>
+                <p>Czas Budowy : 3 Miesiace</p>
+                <p>Powierzchnia - 98m²</p>   
+             </div>
+             <div class="realizacja-box">
+     
+                <p>Bełchatów Niedyszyna <span>150m²</span></p>
+                <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+    
+    
+               <a href="realizacje.html"><img src="realizacje/belchatow-niedyszyny-2.jpg" alt="belchatow" class="realizacje-slide"></a>
+               <p>Czas Budowy : 3 Miesiace</p>
+               <p>Powierzchnia - 150m²</p>
+               
+            </div>
+             </div>
+        </div>
+        <div class="container">
+            <h2 class="houses-header">Tarasy Drewniane | Zadaszenia Tarasowe</h2>
+        </div>
+        <div class="container">  <p><span>Tarasy Drewniane | Zadaszenia Tarasowe</span> - Kliknij <span>+</span> aby czytać wiecęj na temat danej realizacji ! </p><br>
+            <div class="realizacje-container">
+                <div class="realizacja-box">
+                    
+                 <p>Sosna Syberyjska <span>25m²</span></p>
+                 <a href="realizacje.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+                <a href="realizacje.html"><img src="realizacje/taras-25/taras25-1.jpg" alt="taras-25m" class="realizacje-slide"></a>
+             </div>
+             <div class="realizacja-box">
+     
+                 <p>Sosna Syberyjska<span> 20m²</span></p>
+                 <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+     
+                <a href="realizacje.html"><img src="realizacje/taras-20/taras20_1.jpg" alt="taras-20m" class="realizacje-slide"></a>
+             </div>
+             <div class="realizacja-box">
+     
+                <p>Zadaszenie Tarasowe<span> 20m²</span></p>
+                <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+    
+    
+               <a href="realizacje.html"><img src="realizacje/taras-zad-1/taras-zad-1-resized.jpg" alt="verasol-1" class="realizacje-slide"></a>
+            </div>
+             <div class="realizacja-box">
+     
+                <p>Modrzew Syberyjski <span>80m²</span></p>
+                <a href="realizacje.html" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+    
+    
+               <a href="realizacje.html"><img src="realizacje/taras-80/taras80-1.jpg" alt="taras-80m" class="realizacje-slide"></a>
+            </div>
+             </div><br>
+        </div>
+        <!-- <div class="container">
+            <h2 class="houses-header">Zadaszenia tarasów</h2>
+            <p><span>Zadaszenia Tarasowe</span> - Kliknij <span>+</span> aby czytać wiecęj na temat danej realizacji ! </p>
+            
+        </div> -->
+
+        <!-- <div class="container container-2"> 
+            <div class="realizacje-container">
+                <div class="realizacja-box">
+                  
+                 <p>Zadaszenie firmy Verasol <span>25m²</span></p>
+                 <a href="realizacje.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></a>
+     
+                <a href="realizacje.html"><img src="realizacje/taras-zad-1/taras-zad-1.jpg" alt="taras-verasol-1" class="realizacje-slide verasol-1"></a>
+             </div>
+             </div>
+        </div> -->
+    </main>
+    <script type="text/javascript" src="app.js" defer></script>
+</body>
+</html>

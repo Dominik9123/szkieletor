@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkieletor P.P.H.U</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="icon" href="logos/szkieletor_logo_2.png">
+    <!-- <script src="https://kit.fontawesome.com/35fd302b58.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Szkieletor</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Strona Główna</span>
+                </a>
+            </li>
+            <li>
+                <a href="realizacje.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"/></svg>
+                    <span>Realizacje</span>
+                </a>
+            </li>
+            <li>   
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"/></svg>
+                    <span>Oferta</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="oferta.html">Budynki Mieszkalne</a></li>
+                        <li><a href="oferta.html">Tarasy</a></li>
+                        <li><a href="oferta.html">Zadaszenie</a></li>
+                        <li><a href="oferta.html">Pompy Ciepła</a></li>
+                        <li><a href="oferta.html">Fotowoltaika</a></li>
+                    </div>
+                </ul>
+            </li>
+            <!-- <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>todo-list</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#"></a>Work</li>
+                        <li><a href="#"></a>Private</li>
+                        <li><a href="#"></a>Coding</li>
+                        <li><a href="#"></a>Gardering</li>
+                        <li><a href="#"></a>School</li>
+                    </div>
+                </ul>
+            </li> -->
+
+            <li class="active">
+                <a href="kontakt.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>Kontakt</span>
+                </a>
+            </li>
+            <li>
+                <a href="onas.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+                    <span>O Firmie</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>P.P.H.U <span>Szkieletor</span></h2><br>
+            <div class="telefon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>
+                <p><span>TEL</span> - 500 840 100</p><br>
+                </div>
+                <div class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-440 160-640v400h360v80H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v280h-80v-200L480-440Zm0-80 320-200H160l320 200ZM760-40l-56-56 63-64H600v-80h167l-64-64 57-56 160 160L760-40ZM160-640v440-240 3-283 80Z"/></svg>
+                    <p><span>E:Mail</span> - biuro@szkieletor.pl </p>
+                </div>
+                <div class="adres">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                    <p><span>Kałduny</span> 11C | 97-400 <span>Bełchatów</span></p>
+                </div>
+                <div class="nip">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
+                    <p><span>NIP</span> - 769-176-11-35</p>
+                </div>
+                - - - - - - - - - - - - - - - - - -
+                <div class="facebook">
+                    <p>Zapraszamy do odwiedzenia naszego <span>Facebooka</span> !</p>
+                    <a class="facebook-icon" href="https://www.facebook.com/szkieletorpl" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="#e8eaed"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>
+                    <p>Kliknij w Ikonkę, aby zobaczyć naszego Facebooka</p>
+                </div>
+        </div>
+        <div class="container">
+
+            <div class="contact-container">
+                <form action="" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Napisz do Nas!</h2>
+                        <hr>
+                    </div>
+                    <input type="text" name="name" placeholder="Imię" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Twoj E-Mail" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Twoja Wiadomość" class="contact-inputs" required></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+
+            <h2 class="map-text">Tu jesteśmy na mapie!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1244.4100346178884!2d19.37208183649941!3d51.4063607176459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a1793441e6057%3A0x8f76e2ea537c1bfc!2sKa%C5%82duny%2011C%2C%2097-400%20Ka%C5%82duny!5e0!3m2!1spl!2spl!4v1738590859962!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- <div class="container">
+            <div class="contact-container">
+                <form action="" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Napisz do Nas!</h2>
+                        <hr>
+                    </div>
+                    <input type="text" name="name" placeholder="Imię" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Twoj E-Mail" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Twoja Wiadomość" class="contact-inputs" required></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+        </div> -->
+
+       
+    </main>
+
+    <script type="text/javascript" src="app.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
