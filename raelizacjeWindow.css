@@ -275,6 +275,25 @@ hr {
     right: 5%;
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 8px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: var(--line-clr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Początkowo ukrywamy */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #191920;
+    
+}
 
 @media(min-width: 300px) and (max-width: 1024px) {
     body {
@@ -322,6 +341,14 @@ hr {
             grid-auto-flow: column;
             align-items: center;
             overflow-x: scroll;
+        }
+
+        #backToTop {
+            background-color: var(--line-clr);
+           }
+           #backToTop:hover {
+            background-color: #191920;
+            
         }
 
         ul li {

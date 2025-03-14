@@ -72,3 +72,9 @@ document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeLightbox();
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const imageContainer = document.querySelector(".image-container");
+    imageContainer.classList.add("scale-up-hor-left");
+});
